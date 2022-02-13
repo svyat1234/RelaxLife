@@ -3,24 +3,28 @@ const menu = () => {
     const popupMenu = document.querySelector('.popup-menu')
     const popupDialog = document.querySelector('.popup-dialog-menu')
 
-    console.log(menuBtn);
-    console.log(popupMenu);
-    console.log(popupDialog);
-
     menuBtn.addEventListener('click', () => {
+        const docWidth = document.documentElement.clientWidth
         if (!popupMenu.style.visibility) {
             popupMenu.style.visibility = "visible"
-            popupDialog.style.right = "639px"
+            if (docWidth > 1024) {
+                popupDialog.style.right = "639px"
+            } else if (docWidth > 576) {
+                popupDialog.style.right = "549px"
+            } else {
+                popupDialog.style.top = "705px"
+            }
+            
         }
 
     })
-    popupDialog.addEventListener('click', (e) => {
-        if (!e.target.classList.contains('popup-dialog-menu')) {
+
+    popupMenu.addEventListener('click', (e) => {
+        if (!e.target.closest('.popup-dialog-menu') || e.target.tagName === 'A' || e.target.classList.contains('close-menu')) {
             popupMenu.style.visibility = ""
             popupDialog.style.right = ""
+            popupDialog.style.top = ""
         }
     })
-
-
 }
 export default menu
