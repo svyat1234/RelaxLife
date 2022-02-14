@@ -2,17 +2,14 @@ const menu = () => {
     const menuBtn = document.querySelector('.menu__icon')
     const popupMenu = document.querySelector('.popup-menu')
     const popupDialog = document.querySelector('.popup-dialog-menu')
-
     menuBtn.addEventListener('click', () => {
         const docWidth = document.documentElement.clientWidth
         if (!popupMenu.style.visibility) {
             popupMenu.style.visibility = "visible"
-            if (docWidth > 1024) {
-                popupDialog.style.right = "639px"
-            } else if (docWidth > 576) {
-                popupDialog.style.right = "549px"
+            if (docWidth > 576) {
+                popupDialog.style.right = popupDialog.clientWidth + "px"
             } else {
-                popupDialog.style.top = "705px"
+                popupDialog.style.top = popupDialog.offsetHeight + "px"
             }
             
         }

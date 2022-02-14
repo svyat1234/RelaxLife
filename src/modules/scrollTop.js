@@ -12,7 +12,6 @@ const scrollTop = () => {
               return  Math.pow(1 - timeFraction, 2)
           },
           draw(progress) {
-              console.log(progress);
               window.scrollTo(0, scrolled * progress)
           }
         });
