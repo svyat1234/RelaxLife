@@ -6,6 +6,8 @@ import popupPrivacy from './modules/popupPrivacy'
 import popupAdvice from './modules/popupAdvice'
 import prompts from './modules/prompts'
 import accordion from './modules/accordion'
+import tabs from './modules/tabs'
+import sliderReviews from './modules/sliderReviews'
 
 tel()
 menu()
@@ -15,3 +17,5 @@ popupPrivacy()
 popupAdvice()
 prompts()
 accordion()
+tabs()
+sliderReviews()
