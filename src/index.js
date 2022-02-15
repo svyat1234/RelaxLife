@@ -1,3 +1,4 @@
+'use strict'
 import tel from './modules/tel'
 import menu from './modules/menu'
 import scrollTop from './modules/scrollTop'
@@ -8,6 +9,10 @@ import prompts from './modules/prompts'
 import accordion from './modules/accordion'
 import tabs from './modules/tabs'
 import sliderReviews from './modules/sliderReviews'
+import sliderPortfolio from './modules/sliderPortfolio'
+import sliderTransp from './modules/sliderTransp'
+import sliderRepair from './modules/sliderRepair'
+import phoneValid from './modules/phoneValid'
 
 tel()
 menu()
@@ -19,3 +24,7 @@ prompts()
 accordion()
 tabs()
 sliderReviews()
+sliderPortfolio()
+sliderTransp()
+sliderRepair()
+phoneValid()

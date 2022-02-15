@@ -1,7 +1,7 @@
 const tabs = () => {
     const tabPanel  = document.querySelector('.nav-wrap-repair')
     const tabs = document.querySelectorAll('.repair-types-nav__item')
-    const tabContent = document.querySelectorAll('.repair-types-slider__slide')
+    const tabContent = document.querySelectorAll('.types-repair')
 
     tabPanel.addEventListener('click', (e) => {
         if (e.target.closest('.repair-types-nav__item')) {
