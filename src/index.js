@@ -11,7 +11,8 @@ import tabs from './modules/tabs'
 import sliderReviews from './modules/sliderReviews'
 import sliderPortfolio from './modules/sliderPortfolio'
 import sliderTransp from './modules/sliderTransp'
-import sliderRepair from './modules/sliderRepair'
+import sliderTranspAdapt from './modules/sliderTranspAdapt'
+import sliderPortfolioDetails from './modules/sliderPortfolioDetails'
 import phoneValid from './modules/phoneValid'
 
 tel()
@@ -26,5 +27,6 @@ tabs()
 sliderReviews()
 sliderPortfolio()
 sliderTransp()
-sliderRepair()
+sliderTranspAdapt()
+sliderPortfolioDetails()
 phoneValid()

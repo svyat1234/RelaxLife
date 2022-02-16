@@ -20,3 +20,15 @@ const animate = ({timing, draw, duration}) => {
   }
 
 export { animate }
+
+
+// const prevSlide = (elems, index) => {
+//     elems[index].style.display = "none"
+// }
+
+// const nextSlide = (elems, index) => {
+//     elems[index].style.display = "flex"
+// }
+
+// export { prevSlide }
+// export { nextSlide }
