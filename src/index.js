@@ -7,7 +7,8 @@ import popupPrivacy from './modules/popupPrivacy'
 import popupAdvice from './modules/popupAdvice'
 import prompts from './modules/prompts'
 import accordion from './modules/accordion'
-import tabs from './modules/tabs'
+import tabsSliders from './modules/tabsSliders'
+import sliderTabsAdapt from './modules/sliderTabsAdapt'
 import sliderReviews from './modules/sliderReviews'
 import sliderPortfolio from './modules/sliderPortfolio'
 import sliderTransp from './modules/sliderTransp'
@@ -23,7 +24,8 @@ popupPrivacy()
 popupAdvice()
 prompts()
 accordion()
-tabs()
+tabsSliders()
+sliderTabsAdapt()
 sliderReviews()
 sliderPortfolio()
 sliderTransp()

@@ -34,8 +34,6 @@ const prompts = () => {
               });
         })
     })
-    // active-item
-
 }
 
 export default prompts
